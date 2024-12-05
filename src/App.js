@@ -61,22 +61,22 @@
 
 // import React, { useState } from "react";
 import React, { useState } from "react";
-import Sidebar from "./components/Sidebar";
+//import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
-import { IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu"; 
+//import { IconButton } from "@mui/material";
+//import MenuIcon from "@mui/icons-material/Menu"; 
 import "./App.css"; 
 import Navbar from "./components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
-  const [selectedModule, setSelectedModule] = useState("Dashboard");
-  const [sidebarOpen, setSidebarOpen] = useState(false); 
+  const [selectedModule] = useState("Dashboard");
+  // const [sidebarOpen, setSidebarOpen] = useState(false); 
 
-  const toggleSidebar = () => {
-    setSidebarOpen((prevState) => !prevState); 
-  };
+  // const toggleSidebar = () => {
+  //   setSidebarOpen((prevState) => !prevState); 
+  // };
 
   return (
     <div style={{ display: "flex", height: "100vh", flexDirection: "column" }}>
